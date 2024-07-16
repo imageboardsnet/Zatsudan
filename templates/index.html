@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Feedback | Zatsudan</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.3/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <meta name="description" content="This is a micro imageboard with only one thread. Built to provide feedback/blog for Imageboards.net" />
+
+</head>
+
+<body>
+    <div id="page-container">
+        <div id="content-wrap">
+            <div class="ui menu navbar fixed inverted">
+                <a class="item" href='https://imageboards.net'>
+                    <img src="{{ url_for('static', filename='favicon.ico') }}" style="margin-right: 13px; height: 16px; width: 16px;">
+                    Home
+                </a>
+                <a class="item" href='https://blossom.imageboards.net'>
+                    <i class="teal plus icon inverted"></i>
+                    Add Board
+                </a>
+                <a class="item" href='/'>
+                    <i class="teal comment alternate icon inverted"></i>
+                    Feedback
+                </a>      
+                <div class="right menu">
+                    <a class="item" href='https://imageboards.net/about'>
+                    <i class="teal info icon inverted"></i>
+                    About</a>
+                </div>
+            </div>
+
+            {{ content |safe }}
+        </div>
+    <div class="ui footer segment center inverted">
+        <div class="ui container">
+            <div class='centered'>
+                <h4 class="ui ">ImageBoards.net | 2024 | <a href="https://github.com/imageboardsnet/Zatsudan">Zatsudan 1.0.0</a></h4>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

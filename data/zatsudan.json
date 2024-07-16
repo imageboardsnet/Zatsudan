@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "type": "admin",
+        "time": "1721140317",
+        "text": "Hello, World!"
+    },
+    {
+        "id": 2,
+        "type": "anon",
+        "time": "1721140317",
+        "text": "Hello, World!"
+    },
+    {
+        "id": 3,
+        "type": "anon",
+        "time": "1721140317",
+        "text": "Hello, World!"
+    }
+]
